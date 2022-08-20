@@ -127,6 +127,7 @@ ul {
   /* margin-left: 215px;
   margin-top: 94px; */
   margin-bottom: 94px;
+  background-color: var(--primery-bgn);
 }
 .visually-hidden {
   position: absolute;
@@ -171,6 +172,7 @@ ul {
   margin-bottom: 94px; */
   width: 1170px;
   height: 386px;
+  background-color: var(--primery-bgn);
 }
 .work-title,
 .team-title {
