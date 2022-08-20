@@ -31,7 +31,7 @@ ul {
   height: 80px;
 }
 
-.logo {
+.logo-link {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -41,22 +41,22 @@ ul {
   letter-spacing: 0.03em;
 
   color: var(--accent-color);
-  margin-left: 215px;
+  /* margin-left: 215px;
   margin-top: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 25px; */
 }
 
 .nav-list {
   display: flex;
-  margin-left: 93px;
+
+  /* margin-left: 93px;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 32px; */
 }
 .nav-link {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
+
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
@@ -65,28 +65,27 @@ ul {
 .nav-link:focus {
   color: var(--accent-color);
 }
-.nav-item {
+/* .nav-item {
   margin-right: 50px;
-}
-.nav-item {
-  margin-right: 50px;
-}
+} */
+
 .activ-page {
   color: var(--accent-color);
 }
-.contacts {
+.contacts-list {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  /* margin-top: 32px;
+  margin-bottom: 32px; */
 }
 
-.contacts-mail {
+/* .contacts-mail {
   margin-right: 50px;
-}
+} */
 .contacts-link {
+  font-family: var(--main-font);
   color: inherit;
   font-weight: 500;
-  font-size: 14px;
+
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 
@@ -101,11 +100,11 @@ ul {
   background: var(--aсcent-bgn);
   height: 600px;
   text-align: center;
+  font-style: var(--main-font);
 }
 
 .hero-title {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -115,6 +114,7 @@ ul {
   color: var(--accent-font-color);
 }
 .hero-button {
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -124,8 +124,8 @@ ul {
 }
 /* features */
 .features {
-  margin-left: 215px;
-  margin-top: 94px;
+  /* margin-left: 215px;
+  margin-top: 94px; */
   margin-bottom: 94px;
 }
 .visually-hidden {
@@ -150,79 +150,65 @@ ul {
   width: 270px;
   height: 72px;
   margin-left: 30px;
-}
-.features-item > p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--main-font-color);
+  font-family: var(--main-font);
 }
 .features-title {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
-  font-size: 14px;
+
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--secondary-font-color);
 }
+.features-txt {
+  line-height: calc(24 / 14);
+  color: var(--main-font-color);
+}
+
 /* our-work */
 .our-work {
-  margin-left: 215px;
-  margin-bottom: 94px;
+  /* margin-left: 215px;
+  margin-bottom: 94px; */
   width: 1170px;
   height: 386px;
 }
-.work-title {
-  margin-bottom: 50px;
-  font-family: 'Roboto';
-  font-style: normal;
+.work-title,
+.team-title {
+  /* margin-bottom: 50px; */
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--secondary-font-color);
 }
-.work-item {
+/* .work-item {
   margin-left: 30px;
-}
+} */
 .work-list {
   display: flex;
+  /* team */
 }
 .team {
-  background: var(--secondary-bgn);
+  width: 1170px;
   height: 648px;
+  /* margin-left: 245px; */
+  background: var(--secondary-bgn);
 }
 
-.team-title {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-font-color);
-}
 .team-list {
-  margin-left: 215px;
+  /* margin-left: 185px; */
 
   display: flex;
 }
-.team-item {
+/* .team-item {
   margin-left: 30px;
-}
+} */
 /* footer */
 .footer {
   background: var(--aсcent-bgn);
   height: 252px;
-
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
@@ -249,4 +235,29 @@ ul {
 /* portfolio */
 .filter-btns {
   display: flex;
+}
+.filter-btn {
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--accent-font-color);
+  background-color: var(--accent-color);
+}
+.project-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: var(--secondary-font-color);
+}
+.project-txt {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
+  color: var(--main-font-color);
 }
