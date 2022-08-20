@@ -1,12 +1,23 @@
 :root {
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
+  --primery-bgn: #f5f5f5;
+  --secondary-bgn: #f5f4fa;
+  --aсcent-bgn: #2f303a;
+  --accent-color: #2196f3;
+  --main-font-color: #757575;
+  --secondary-font-color: #212121;
+  --accent-font-color: #ffffff;
 }
-
+/* body */
 .body {
-  background: #fff;
   width: 1600px;
   font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: var(--main-font-color);
 }
 a {
   text-decoration: none;
@@ -14,6 +25,7 @@ a {
 ul {
   list-style-type: none;
 }
+/* header */
 .header {
   display: flex;
   height: 80px;
@@ -24,31 +36,34 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 26);
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--accent-color);
   margin-left: 215px;
   margin-top: 24px;
   margin-bottom: 25px;
 }
 
 .nav-list {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: #212121;
   display: flex;
   margin-left: 93px;
   margin-top: 32px;
   margin-bottom: 32px;
 }
 .nav-link {
-  color: inherit;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--secondary-font-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
 }
 .nav-item {
   margin-right: 50px;
@@ -56,7 +71,9 @@ ul {
 .nav-item {
   margin-right: 50px;
 }
-
+.activ-page {
+  color: var(--accent-color);
+}
 .contacts {
   display: flex;
   margin-top: 32px;
@@ -73,11 +90,17 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--main-font-color);
 }
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+/* hero */
 .hero {
-  background: #2f303a;
+  background: var(--aсcent-bgn);
   height: 600px;
+  text-align: center;
 }
 
 .hero-title {
@@ -86,22 +109,20 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--accent-font-color);
 }
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-
-  color: #ffffff;
+  color: var(--accent-font-color);
+  background-color: var(--accent-color);
 }
+/* features */
 .features {
   margin-left: 215px;
   margin-top: 94px;
@@ -136,7 +157,7 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #757575;
+  color: var(--main-font-color);
 }
 .features-title {
   font-family: 'Roboto';
@@ -148,6 +169,7 @@ ul {
   text-transform: uppercase;
   color: #212121;
 }
+/* our-work */
 .our-work {
   margin-left: 215px;
   margin-bottom: 94px;
@@ -164,7 +186,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--secondary-font-color);
 }
 .work-item {
   margin-left: 30px;
@@ -173,7 +195,7 @@ ul {
   display: flex;
 }
 .team {
-  background: #f5f4fa;
+  background: var(--secondary-bgn);
   height: 648px;
 }
 
@@ -186,7 +208,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--secondary-font-color);
 }
 .team-list {
   margin-left: 215px;
@@ -196,7 +218,35 @@ ul {
 .team-item {
   margin-left: 30px;
 }
+/* footer */
 .footer {
-  background: #2f303a;
+  background: var(--aсcent-bgn);
   height: 252px;
+
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.mail-link,
+.tel-link,
+.address-link {
+  font-style: normal;
+}
+.address-link {
+  color: var(--accent-font-color);
+}
+.mail-link,
+.tel-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover,
+.address-link:focus,
+.mail-link:hover,
+.mail-link:focus,
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+/* portfolio */
+.filter-btns {
+  display: flex;
 }
