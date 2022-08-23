@@ -10,7 +10,13 @@
   --accent-font-color: #ffffff;
 }
 /* body */
-.body {
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
   width: 1600px;
   font-family: var(--main-font);
   font-size: 14px;
@@ -19,17 +25,8 @@
 
   color: var(--main-font-color);
 }
-a {
-  text-decoration: none;
-}
-ul {
-  list-style-type: none;
-}
+
 /* header */
-.header {
-  display: flex;
-  height: 80px;
-}
 
 .logo-link {
   font-family: 'Raleway';
@@ -37,26 +34,14 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-
   letter-spacing: 0.03em;
-
   color: var(--accent-color);
-  /* margin-left: 215px;
-  margin-top: 24px;
-  margin-bottom: 25px; */
 }
-
-.nav-list {
-  display: flex;
-
-  /* margin-left: 93px;
-  margin-top: 32px;
-  margin-bottom: 32px; */
+.logo-deko {
+  color: black;
 }
 .nav-link {
-  font-family: var(--main-font);
   font-weight: 500;
-
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
@@ -65,31 +50,16 @@ ul {
 .nav-link:focus {
   color: var(--accent-color);
 }
-/* .nav-item {
-  margin-right: 50px;
-} */
 
 .activ-page {
   color: var(--accent-color);
 }
-.contacts-list {
-  display: flex;
-  /* margin-top: 32px;
-  margin-bottom: 32px; */
-}
 
-/* .contacts-mail {
-  margin-right: 50px;
-} */
 .contacts-link {
-  font-family: var(--main-font);
   color: inherit;
   font-weight: 500;
-
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-
-  color: var(--main-font-color);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -100,15 +70,12 @@ ul {
   background: var(--aсcent-bgn);
   height: 600px;
   text-align: center;
-  font-style: var(--main-font);
 }
 
 .hero-title {
-  font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-font-color);
@@ -123,12 +90,7 @@ ul {
   background-color: var(--accent-color);
 }
 /* features */
-.features {
-  /* margin-left: 215px;
-  margin-top: 94px; */
-  margin-bottom: 94px;
-  /* background-color: var(--primery-bgn); */
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -143,19 +105,14 @@ ul {
   overflow: hidden;
 }
 .features-list {
-  display: flex;
   width: 1170px;
-  height: 98px;
 }
 .features-item {
   width: 270px;
-  height: 72px;
-  margin-left: 30px;
-  font-family: var(--main-font);
 }
 .features-title {
   font-weight: 700;
-
+  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -168,16 +125,11 @@ ul {
 
 /* our-work */
 .our-work {
-  /* margin-left: 215px;
-  margin-bottom: 94px; */
   width: 1170px;
-  height: 386px;
-  /* background-color: var(--primery-bgn); */
 }
+/* team */
 .work-title,
 .team-title {
-  /* margin-bottom: 50px; */
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -185,34 +137,30 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
-/* .work-item {
-  margin-left: 30px;
-} */
-.work-list {
-  display: flex;
-  /* team */
-}
+
 .team {
   width: 1170px;
-  height: 648px;
-  /* margin-left: 245px; */
   background: var(--secondary-bgn);
 }
-
-.team-list {
-  /* margin-left: 185px; */
-
-  display: flex;
+.team-item {
+  font-size: 16px;
+  line-height: calc(19 / 16);
 }
-/* .team-item {
-  margin-left: 30px;
-} */
+.team-mate {
+  font-weight: 500;
+
+  color: var(--secondary-font-color);
+}
+
 /* footer */
 .footer {
   background: var(--aсcent-bgn);
-  height: 252px;
+
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+}
+.logo-deko-white {
+  color: var(--accent-font-color);
 }
 .mail-link,
 .tel-link,
@@ -235,11 +183,14 @@ ul {
   color: var(--accent-color);
 }
 /* portfolio */
-.filter-btns {
-  display: flex;
-}
+
 .filter-btn {
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  color: var(--secondary-font-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -247,19 +198,13 @@ ul {
   background-color: var(--accent-color);
 }
 .project-title {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--secondary-font-color);
 }
 .project-txt {
-  font-family: var(--main-font);
   font-size: 16px;
   line-height: calc(30 / 16);
-  /* identical to box height, or 188% */
-  letter-spacing: 0.03em;
-  color: var(--main-font-color);
 }
