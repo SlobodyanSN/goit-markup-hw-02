@@ -201,7 +201,11 @@ body {
   color: var(--accent-color);
 }
 /* portfolio */
-
+.filter-btns {
+  padding-left: 0px;
+  margin-top: 94px;
+  margin-bottom: 0px;
+}
 .filter-btn {
   cursor: pointer;
   font-weight: 500;
@@ -220,6 +224,11 @@ body {
   color: var(--accent-font-color);
   background-color: var(--accent-color);
 }
+.project-list {
+  margin: 34px 0px 0px 0px;
+  padding: 0px;
+}
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -230,4 +239,5 @@ body {
 .project-txt {
   font-size: 16px;
   line-height: calc(30 / 16);
+  margin-bottom: 0px;
 }
