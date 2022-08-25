@@ -17,12 +17,10 @@ ul {
   list-style-type: none;
 }
 body {
-  width: 1600px;
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: calc(24 / 14);
+  background-color: #ffffff;
   letter-spacing: 0.03em;
-
   color: var(--main-font-color);
 }
 
@@ -37,8 +35,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+.conteiner {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .logo-deko {
   color: black;
+}
+.nav-list,
+.contacts-list {
+  padding-left: 0px;
 }
 .nav-link {
   font-weight: 500;
@@ -68,8 +77,9 @@ body {
 /* hero */
 .hero {
   background: var(--aсcent-bgn);
-  height: 600px;
+
   text-align: center;
+  padding: 200px 452px;
 }
 
 .hero-title {
@@ -79,6 +89,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-font-color);
+  padding-bottom: 0px;
+  margin-bottom: 30px;
 }
 .hero-button {
   cursor: pointer;
@@ -88,6 +100,10 @@ body {
   letter-spacing: 0.06em;
   color: var(--accent-font-color);
   background-color: var(--accent-color);
+  padding: 10px 32px;
+  min-width: 216px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* features */
 
@@ -105,7 +121,8 @@ body {
   overflow: hidden;
 }
 .features-list {
-  width: 1170px;
+  margin-top: 0px;
+  padding-left: 0px;
 }
 .features-item {
   width: 270px;
@@ -117,16 +134,13 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-font-color);
+  margin: 0px;
 }
 .features-txt {
   line-height: calc(24 / 14);
   color: var(--main-font-color);
 }
 
-/* our-work */
-.our-work {
-  width: 1170px;
-}
 /* team */
 .work-title,
 .team-title {
@@ -136,28 +150,32 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+  margin: 0px;
 }
-
+.work-list,
+.team-list,
+.address-list {
+  margin: 0px;
+  padding: 0px;
+}
 .team {
-  width: 1170px;
   background: var(--secondary-bgn);
 }
-.team-item {
+.team-mate,
+.team-position {
   font-size: 16px;
   line-height: calc(19 / 16);
 }
 .team-mate {
   font-weight: 500;
-
   color: var(--secondary-font-color);
 }
-
+.team-position {
+  margin: 0px;
+}
 /* footer */
 .footer {
   background: var(--aсcent-bgn);
-
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
 }
 .logo-deko-white {
   color: var(--accent-font-color);
@@ -191,6 +209,9 @@ body {
   line-height: calc(26 / 16);
   text-align: center;
   color: var(--secondary-font-color);
+  font-family: inherit;
+  letter-spacing: 0.03em;
+  background-color: #ffffff;
 }
 .filter-btn:hover,
 .filter-btn:focus {
