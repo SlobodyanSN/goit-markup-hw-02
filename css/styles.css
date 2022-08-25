@@ -212,6 +212,8 @@ body {
   font-family: inherit;
   letter-spacing: 0.03em;
   background-color: #ffffff;
+  min-width: 73px;
+  padding: 6px 22px;
 }
 .filter-btn:hover,
 .filter-btn:focus {
