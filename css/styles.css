@@ -80,7 +80,7 @@ body {
   background: var(--aсcent-bgn);
 
   text-align: center;
-  padding: 200px 452px;
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -91,7 +91,8 @@ body {
   text-transform: uppercase;
   color: var(--accent-font-color);
   padding-bottom: 0px;
-  margin: 0px 0px 30px 0px;
+  margin: 0px auto 30px;
+  width: 696px;
 }
 .hero-button {
   cursor: pointer;
@@ -216,8 +217,7 @@ body {
   color: var(--secondary-font-color);
   font-family: inherit;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
-  min-width: 73px;
+  background-color: var(--secondary-bgn);
   padding: 6px 22px;
 }
 .filter-btn:hover,
